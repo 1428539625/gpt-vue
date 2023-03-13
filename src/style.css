@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+  display: none !important;
+}
+
+body {
+  min-height: 100vh;
+}
+
+path {
+  fill: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.dark path {
+  fill: white;
+}
+
+.blink {
+  display: inline-block;
+  vertical-align: text-bottom;
+  height: 1.25rem;
+  width: 0.5rem;
+  background: black;
+  animation: blink 1s step-end infinite;
+}
+
+.dark .blink {
+  animation: darkblink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background: transparent;
+  }
+  50% {
+    background: rgb(34, 34, 34);
+  }
+}
+
+@keyframes darkblink {
+  from,
+  to {
+    background: transparent;
+  }
+  50% {
+    background: rgb(211, 211, 211);
+  }
+}
+
+.box{
+    height:40px;
+    line-height:40px;
+    color: blue;
+    font-size: 0.8rem;
+    font-weight: 200;
+    overflow:hidden;
+    position:relative;
+    margin-left: 3%;
+}
+.list{
+    position:absolute;
+    left:0;
+}

@@ -1,0 +1,8 @@
+已支持GPT3.5 语言 代码 图片模式
+确保你的环境又nodejs
+npm install 
+npm run dev
+npm run build
+
+全局搜索sk-
+换成你的key
